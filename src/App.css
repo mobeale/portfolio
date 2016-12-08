@@ -1,0 +1,169 @@
+
+
+* h1, h2, h3, h4 {
+}
+
+.theme-btn button {
+  background-color: transparent;
+}
+
+ .theme-btn .btn-water:hover {
+  color: #1B98E0;
+}
+
+.theme-btn .btn-fire:hover {
+  color: #D58936;
+}
+ .theme-btn .btn-earth:hover {
+  color: #96BE8C ;
+}
+
+
+/* Volcano */
+
+.volcano {
+  font-family: 'Bevan' ;
+  color: #d6b161;
+  background-color: #323232;
+  transition: 1s ease-out;
+
+}
+
+.volcano .theme-btn i {
+  color: #b8b8b8;
+}
+
+.volcano .btn-fire i {
+  color: #D58936;
+}
+
+
+
+.volcano h1,h2,h3,h4,h5, p {
+}
+
+.volcano h1 {
+  font-size: 10vw;
+}
+
+.volcano h2 {
+  font-size: 10vw;
+}
+
+.volcano h3 {
+  font-size: 10vw;
+}
+
+.volcano h4 {
+  font-size: 8vw;
+}
+
+
+/* --- */
+
+.ocean {
+  font-family: 'Shrikhand';
+  color: #13293D;
+  background-color: #247BA0;
+    transition: 1s ease-out;
+}
+
+.ocean h1,h2,h3,h4,h5, p {
+
+}
+
+.ocean h1 {
+  font-size: 12vw;
+}
+
+.ocean h2 {
+  font-size: 10vw;
+}
+
+.ocean h3 {
+  font-size: 8vw;
+}
+
+.ocean h4 {
+  font-size: 6vw;
+}
+
+.ocean .custom-btn {
+  color: #13293D
+}
+
+.ocean .custom-btn:hover {
+  color: #e8f2f2;
+  transition: 0.6s ease;
+}
+
+.ocean .btn-water i {
+  color: #1B98E0;
+}
+/* --------- */
+
+.jungle {
+  font-family: 'Boogaloo';
+  color: #392A16;
+  background-color: #629460;
+    transition: 1s ease-out;
+}
+
+.jungle h1,h2,h3,h4,h5, p {
+}
+
+.jungle h1 {
+  font-size: 14vw;
+}
+
+.jungle h2 {
+  font-size: 12vw;
+}
+
+.jungle h3 {
+  font-size: 10vw;
+}
+
+.jungle h4 {
+  font-size: 8vw;
+}
+
+.jungle .btn-earth i {
+  color: #96BE8C !important;
+}
+
+.ocean .btn-water i {
+  color: #1B98E0;
+}
+
+/* ------- */
+
+.default {
+  font-family: 'Satisfy';
+  color: #333;
+  background-image: url(/src/geometry2.png);
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+
+.default h1,h2,h3,h4,h5, p {
+}
+
+
+
+
+.default h1 {
+  font-size: 14vw;
+}
+
+.default h2 {
+  font-size: 12vw;
+}
+
+.default h3 {
+  font-size: 10vw;
+}
+
+.default h4 {
+  font-size: 8vw;
+}
