@@ -23,6 +23,8 @@
 
 .volcano {
   font-family: 'Bevan' ;
+  transition: 1s ease-out;
+
   color: #d6b161;
   background-color: #323232;
   transition: 1s ease-out;
@@ -58,12 +60,18 @@
   font-size: 8vw;
 }
 
+.volcano .custom-btn:hover {
+  color: #D58936;
+  transition: 0.6s ease;
+}
+
 
 /* --- */
 
 .ocean {
   font-family: 'Shrikhand';
   color: #13293D;
+  transition: 1s ease-out;
 
     transition: 1s ease-out;
     background-image: linear-gradient(110deg, #2bfcff 10%, #0e367d 90%), url(./wov.png);
@@ -96,7 +104,7 @@ background-blend-mode: color;
 }
 
 .ocean .custom-btn:hover {
-  color: #e8f2f2;
+  color: #1B98E0;
   transition: 0.6s ease;
 }
 
@@ -106,10 +114,14 @@ background-blend-mode: color;
 /* --------- */
 
 .jungle {
-  font-family: 'Boogaloo';
+  font-family: 'Simonetta';
+  font-weight: 800;
   color: #392A16;
-  background-color: #629460;
     transition: 1s ease-out;
+    background-image: linear-gradient(110deg, #96BE8C 80%, #243119 90%), url(./symphony.png);
+    background-blend-mode: color;
+    background-repeat: repeat;
+
 }
 
 .jungle h1,h2,h3,h4,h5, p {
@@ -144,7 +156,8 @@ background-blend-mode: color;
 .default {
   font-family: 'Satisfy';
   color: #333;
-  background-image: linear-gradient(110deg, #f4f4f4 100%, #0e367d 90%), url(./geometry2.png);
+  transition: 1s ease-out;
+  background-image: linear-gradient(110deg, #f4f4f4 100%, #f4f4f4 90%), url(./geometry2.png);
   background-blend-mode: color;
   background-repeat: repeat;
 }
