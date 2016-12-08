@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
-import geometry2 from './geometry2.png';
+import geometry from './geometry2.png';
+import wov from './wov.png';
 import './App.css';
+console.log(geometry);
 
 var App = React.createClass({
   getInitialState: function(){
