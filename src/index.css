@@ -4,12 +4,54 @@ body {
   font-family: sans-serif;
   color: #404040;
 }
+
+@media screen and (min-width: 1000px) {
+    .default h1 {
+      font-size: 8vmax;
+    }
+    .default h4 {
+      font-size: 5vmax;
+    }
+
+    .ocean h1 {
+      font-size: 5vmax;
+    }
+    .ocean h4 {
+      font-size: 2.5vmax;
+    }
+
+    .jungle h1 {
+      font-size: 5vmax;
+    }
+    .jungle h4 {
+      font-size: 2.5vmax;
+    }
+
+    .volcano h1 {
+      font-size: 5vmax;
+    }
+    .volcano h4 {
+      font-size: 2.5vmax;
+    }
+
+    .theme-btn i {
+      font-size: 2.5vmax !important;
+    }
+
+    .custom-btn {
+      font-size: 3vmax !important;
+    }
+}
+
+
+
 .custom-btn {
-  padding: 2vw;
-  font-size: 5vw;
-  line-height: 1.33;
+  font-size: 4vmax;
   border-radius: 100px;
-  margin: 2vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
   border: none;
   border-width: 0.4rem;
   font-weight: 600;
@@ -19,12 +61,15 @@ body {
 }
 
 
-.theme-btn {
- margin-bottom: 5vh;
+
+
+.theme-btn:active .btn {
+  box-shadow: none !important;
 }
 
 .theme-btn i {
-  font-size: 5vw;
+  font-size: 4vmax;
+  margin-top:1vh
 }
 
 *:focus {
@@ -35,7 +80,7 @@ body {
   width: 30px;
   height: 30px;
   text-align: center;
-  padding: 6px 0;
+  padding: 3px 0;
   font-size: 12px;
   line-height: 1.428571429;
   border-radius: 15px;
@@ -44,7 +89,9 @@ body {
 .circle-lg {
   width: 50px;
   height: 50px;
-  margin: 2vw;
+
+  margin-left: 2rem;
+  margin-right: 2rem;
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
