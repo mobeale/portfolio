@@ -31,13 +31,17 @@
 
 .clock {
   right: 2vmax ;
-  top: 5px;
+  top: 7px;
   position: absolute;
   font-size: 2vmax !important;
 }
 
 .default .clock p {
-  font-size: 3vmax;
+  font-size: 5vmin !important;
+}
+
+.clock p {
+  font-size: 3vmin !important;
 }
 
 .default h1,h2,h3,h4,h5, p {
@@ -90,7 +94,7 @@
 }
 
 .volcano .theme-btn i {
-  color: #b8b8b8;
+  color: #d6b161;
 }
 
 .volcano .btn-fire i {
@@ -127,7 +131,7 @@
 
 .ocean {
   font-family: 'Shrikhand';
-  color: #13293D;
+  color: #214565;
   background-image: linear-gradient(110deg, #2bfcff 10%, #0e367d 90%), url(./wov.png);
   background-repeat: repeat;
   background-blend-mode: color;
@@ -156,7 +160,7 @@
 
 
 .ocean .custom-btn {
-  color: #13293D
+  color: #214565
 }
 
 .ocean .custom-btn:hover {

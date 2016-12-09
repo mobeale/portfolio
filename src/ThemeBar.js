@@ -1,13 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
-import Clock from './Clock';
 
 var ThemeBar = React.createClass({
-  getInitialState: function(){
-      return {
-          theme: 'default'
-      };
-  },
+
   toggleFireTheme: function(){
       if (this.state.theme === 'default'){
           this.setState({theme: 'volcano'});
@@ -37,6 +32,7 @@ var ThemeBar = React.createClass({
           this.setState({theme: 'jungle'});
       }
   },
+
 
   render() {
 

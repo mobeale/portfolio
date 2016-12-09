@@ -5,6 +5,23 @@ body {
   color: #404040;
 }
 
+.__react_component_tooltip {
+  background-color: transparent !important;
+  border: none !important;
+  color: inherit !important;
+  font-size: 22px !important;
+  padding: 0px !important;
+}
+
+.__react_component_tooltip.type-dark.place-top:after{
+   border-top-color: none !important;
+ border-top-style: none !important;
+ border-top-width: none !important;
+}
+
+.__react_component_tooltip.place-top {
+    margin-top: 0px !important;
+}
 @media screen and (min-width: 1000px) {
     .default h1 {
       font-size: 8vmax;
@@ -38,17 +55,24 @@ body {
       font-size: 2.5vmax !important;
     }
 
-    .custom-btn {
-      font-size: 3vmax !important;
+    .__react_component_tooltip {
+
+      font-size: 30px !important;
+
     }
+
+    .custom-btn {
+      font-size: 5vmax !important;
+    }
+
 }
 
 
 
 .custom-btn {
-  font-size: 4vmax;
+  font-size: 6vmax;
   border-radius: 100px;
-  margin-top: 1vh;
+  margin-top: 0vh;
   margin-bottom: 1vh;
   margin-left: 3vw;
   margin-right: 3vw;
