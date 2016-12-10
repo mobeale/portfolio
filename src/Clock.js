@@ -14,8 +14,6 @@ var Clock = React.createClass({
       hours = hours + "";
       if( hours.length == 1 ){ hours = "0" + hours; }
 
-
-
       minutes = minutes + "";
       if( minutes.length == 1 ){ minutes = "0" + minutes; }
 

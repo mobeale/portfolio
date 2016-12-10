@@ -3,39 +3,41 @@ import './App.css';
 
 var ThemeBar = React.createClass({
 
-  toggleFireTheme: function(){
-      if (this.state.theme === 'default'){
-          this.setState({theme: 'volcano'});
-      } else if (this.state.theme === 'volcano') {
-        this.setState({theme: 'default'})
-      } else {
-          this.setState({theme: 'volcano'});
-      }
+ toggleFireTheme: function(){
+   var theme = this.props.theme;
+   var changeTheme = this.props.changeTheme;
+
+   if (theme === 'default'){
+      changeTheme('volcano')}
+    else if (theme === 'volcano'){
+      changeTheme('default')}
+    else {changeTheme('volcano')}
   },
 
   toggleWaterTheme: function(){
-      if (this.state.theme === 'default'){
-          this.setState({theme: 'ocean'});
-      } else if (this.state.theme === 'ocean') {
-        this.setState({theme: 'default'})
-      } else {
-          this.setState({theme: 'ocean'});
-      }
-  },
+    var theme = this.props.theme;
+    var changeTheme = this.props.changeTheme;
 
-  toggleEarthTheme: function(){
-      if (this.state.theme === 'default'){
-          this.setState({theme: 'jungle'});
-      } else if (this.state.theme === 'jungle') {
-        this.setState({theme: 'default'})
-      }  else {
-          this.setState({theme: 'jungle'});
-      }
-  },
+    if (theme === 'default'){
+       changeTheme('ocean')}
+     else if (theme === 'ocean'){
+       changeTheme('default')}
+     else {changeTheme('ocean')}
+    },
+
+   toggleEarthTheme: function(){
+     var theme = this.props.theme;
+     var changeTheme = this.props.changeTheme;
+
+     if (theme === 'default'){
+        changeTheme('jungle')}
+      else if (theme === 'jungle'){
+        changeTheme('jungle')}
+      else {changeTheme('jungle')}
+    },
 
 
   render() {
-
     return (
           <div className="text-center theme-btn">
             <button onClick={this.toggleWaterTheme} type="button" className="btn btn-water circle-lg"><i className="fa fa-tint"></i></button>
