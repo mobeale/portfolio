@@ -10,8 +10,8 @@ var Header = React.createClass({
       <Clock/>
       <ThemeBar changeTheme={this.props.themeChanger} theme={this.props.currentTheme} />
     </div>
-  )
-  }
+
+   )}
 })
 
 export default Header;

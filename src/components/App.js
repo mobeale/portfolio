@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import '../styles/App.css';
 import Clock from './Clock';
 import ThemeBar from './ThemeBar';
-import Name from './Name';
+import Body from './Body';
 import ReactTooltip from 'react-tooltip';
 import Footer from './Footer';
 import Header from './Header';
@@ -10,7 +10,8 @@ import Header from './Header';
 var App = React.createClass({
   getInitialState: function(){
       return {
-          theme: 'default'
+          theme: 'default',
+          view: 'home'
       };
   },
   changeTheme: function(newTheme){
@@ -19,14 +20,19 @@ var App = React.createClass({
       });
     },
 
+  changeView: function(newView){
+    this.setState({
+      view: newView
+    })
+  },
 
   render() {
 		return (
 			<div>
 				<div className={this.state.theme} style={{height: '100vh'}}>
           <Header themeChanger={this.changeTheme} currentTheme={this.state.theme} / >
-				  <Name />
-				  <Footer />
+				  <Body view={this.state.view}/>
+				  <Footer changeView={this.changeView} view={this.state.view}/>
           <ReactTooltip effect="solid"/>
           </div>
 			</div>
