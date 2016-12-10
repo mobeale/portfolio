@@ -1,23 +1,45 @@
 import React, {Component} from 'react';
 import './App.css';
 import Clock from './Clock';
-import ThemeBar from './ThemeBar';
 import ReactTooltip from 'react-tooltip';
 
 var App = React.createClass({
-  getInitialState: function(){
-      return {
-          theme: 'default'
-      };
-  },
-  changeTheme: function(newTheme){
-      this.setState({
-        theme: newTheme
-      });
-    },
+	getInitialState: function() {
+		return {theme: 'default'};
+	},
 
+	toggleFireTheme: function() {
+		if (this.state.theme === 'default') {
+			this.setState({theme: 'volcano'});
+		} else if (this.state.theme === 'volcano') {
+			this.setState({theme: 'default'})
+		} else {
+			this.setState({theme: 'volcano'});
+		}
+	},
 
-  render() {
+	toggleWaterTheme: function() {
+		if (this.state.theme === 'default') {
+			this.setState({theme: 'ocean'});
+		} else if (this.state.theme === 'ocean') {
+			this.setState({theme: 'default'})
+		} else {
+			this.setState({theme: 'ocean'});
+		}
+	},
+
+	toggleEarthTheme: function() {
+		if (this.state.theme === 'default') {
+			this.setState({theme: 'jungle'});
+		} else if (this.state.theme === 'jungle') {
+			this.setState({theme: 'default'})
+		} else {
+			this.setState({theme: 'jungle'});
+		}
+	},
+
+	render() {
+
 		return (
 			<div>
 				<div className={this.state.theme} style={{
@@ -25,7 +47,17 @@ var App = React.createClass({
 				}}>
 					<div className="navbar-fixed">
 						<Clock/>
-						<ThemeBar onChange={this.props.onChange} />
+						<div className="text-center theme-btn">
+							<button onClick={this.toggleWaterTheme} type="button" className="btn btn-water circle-lg">
+								<i className="fa fa-tint"></i>
+							</button>
+							<button onClick={this.toggleFireTheme} type="button" className="btn btn-fire circle-lg">
+								<i className="fa fa-fire"></i>
+							</button>
+							<button onClick={this.toggleEarthTheme} type="button" className="btn btn-earth circle-lg">
+								<i className="fa fa-leaf"></i>
+							</button>
+						</div>
 					</div>
 
 					<div className="center-box">
@@ -40,7 +72,7 @@ var App = React.createClass({
 						<div className="container">
 
 							<button className="custom-btn" data-tip="About">
-								<i className="fa fa-user-secret"></i>
+								<i className="fa fa-user-secret" dataToggle="tooltip" title="Hooray!"></i>
 							</button>
 							<button className="custom-btn" data-tip="Work">
 								<i className="fa fa-code-fork"></i>
