@@ -23,7 +23,7 @@
 .default {
   font-family: 'Reenie Beanie';
   color: #5a5a5a;
-  background-image: url(./bg/cork-wallet.png);
+  background-image: url(../bg/cork-wallet.png);
   background-blend-mode: color;
   background-repeat: repeat;
 
@@ -129,7 +129,7 @@
 .ocean {
   font-family: 'Shrikhand';
   color: #214565;
-  background-image: linear-gradient(110deg, #2bfcff 10%, #0e367d 90%), url(./bg/wov.png);
+  background-image: linear-gradient(110deg, #2bfcff 10%, #0e367d 90%), url(../bg/wov.png);
   background-repeat: repeat;
   background-blend-mode: color;
 }
@@ -172,7 +172,7 @@
   font-family: 'Montserrat';
   font-weight: 800;
   color: #392A16;
-  background-image: linear-gradient(180deg, #243119 35%, #392A16 70%), url(./bg/tree_bark.png);
+  background-image: linear-gradient(180deg, #243119 35%, #392A16 70%), url(../bg/tree_bark.png);
   background-blend-mode: color;
   background-repeat: repeat;
 

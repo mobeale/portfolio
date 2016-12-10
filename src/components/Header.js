@@ -8,7 +8,7 @@ var Header = React.createClass({
 
     <div className="navbar-fixed">
       <Clock/>
-      <ThemeBar changeTheme={this.props.changeTheme} theme={this.props.theme} />
+      <ThemeBar changeTheme={this.props.themeChanger} theme={this.props.currentTheme} />
     </div>
   )
   }

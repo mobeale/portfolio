@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './App.css';
+import '../styles/App.css';
 import Clock from './Clock';
 import ThemeBar from './ThemeBar';
 import Name from './Name';
@@ -19,18 +19,16 @@ var App = React.createClass({
       });
     },
 
+
   render() {
 		return (
 			<div>
 				<div className={this.state.theme} style={{height: '100vh'}}>
-
-          <Header changeTheme={this.changeTheme} theme={this.state.theme}  />
+          <Header themeChanger={this.changeTheme} currentTheme={this.state.theme} / >
 				  <Name />
-          <ReactTooltip effect="solid"/>
 				  <Footer />
-
-
-				</div>
+          <ReactTooltip effect="solid"/>
+          </div>
 			</div>
 		);
 	}
