@@ -32,10 +32,9 @@ var ThemeBar = React.createClass({
      if (theme === 'default'){
         changeTheme('jungle')}
       else if (theme === 'jungle'){
-        changeTheme('jungle')}
+        changeTheme('default')}
       else {changeTheme('jungle')}
     },
-
 
   render() {
     return (

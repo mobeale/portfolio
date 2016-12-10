@@ -4,6 +4,8 @@ import Clock from './Clock';
 import ThemeBar from './ThemeBar';
 import Name from './Name';
 import ReactTooltip from 'react-tooltip';
+import Footer from './Footer';
+import Header from './Header';
 
 var App = React.createClass({
   getInitialState: function(){
@@ -22,27 +24,12 @@ var App = React.createClass({
 			<div>
 				<div className={this.state.theme} style={{height: '100vh'}}>
 
-          <div className="navbar-fixed">
-						<Clock/>
-						<ThemeBar changeTheme={this.changeTheme} theme={this.state.theme} />
-					</div>
-
+          <Header changeTheme={this.changeTheme} theme={this.state.theme}  />
 				  <Name />
           <ReactTooltip effect="solid"/>
+				  <Footer />
 
-					<footer className="footer text-center">
-						<div className="container">
 
-							<button className="custom-btn" data-tip="About">
-								<i className="fa fa-user-secret"></i>
-							</button>
-							<button className="custom-btn" data-tip="Work">
-								<i className="fa fa-code-fork"></i>
-							</button>
-						</div>
-					</footer>
-
-          
 				</div>
 			</div>
 		);
